@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+About this site
+
+I am an MD-PhD candidate at Johns Hopkins Medical Scientist Training Program. My research interests are in leveraging computational approaches to understand the role of genetics in human disease.

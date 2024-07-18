@@ -1,0 +1,56 @@
+---
+title: "Julie Xian"
+
+#image: images/prof_pic.jpg
+about:
+  template: solana
+  #image-shape: round
+  #image-width: 15em
+  links:
+    - text: github
+      icon: github
+      url: "https://github.com/juliexian"
+    - text: twitter
+      icon: twitter
+      url: "https://twitter.com/JulieXXian"
+    - text: "{{< ai google-scholar >}} google scholar"
+      url: "https://scholar.google.com/citations?user=08XOBUYAAAAJ&hl=en"
+      
+comments: false
+---
+
+#### First-year MD-PhD candidate
+<!--
+[Johns Hopkins Medical Scientist Training Program](https://mdphd.johnshopkins.edu)
+-->
+Johns Hopkins Medical Scientist Training Program
+
+###### jxian2 [at] jh [dot] edu
+
+<br>
+
+### Previous & Current Research Interests
+
+Genetics and genomics of human disease
+
+Analyzing spatially resolved transcriptomic sequencing data
+
+Computational frameworks for large-scale phenotype data
+
+### Education
+
+Johns Hopkins University \| Baltimore, MD
+
+MD-PhD candidate \| Aug 2023 - 
+
+University of Pennsylvania \| Philadelphia, PA
+
+B.A. in Neuroscience \| Aug 2018 - Dec 2021
+
+### Experience
+
+Children's Hospital of Philadelphia \| Philadelphia, PA
+
+Biomedical data scientist \| Sept 2021 - June 2023
+
+:::
