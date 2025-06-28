@@ -19,7 +19,7 @@ about:
 comments: false
 ---
 
-#### First-year MD-PhD candidate
+#### MD-PhD candidate
 <!--
 [Johns Hopkins Medical Scientist Training Program](https://mdphd.johnshopkins.edu)
 -->
