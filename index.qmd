@@ -14,7 +14,7 @@ about:
       icon: twitter
       url: "https://twitter.com/JulieXXian"
     - text: "{{< ai google-scholar >}} google scholar"
-      url: "https://scholar.google.com/citations?user=08XOBUYAAAAJ&hl=en"
+      url: "https://scholar.google.com/citations?user=px7_aJMAAAAJ&hl=en&oi=ao"
       
 comments: false
 ---
