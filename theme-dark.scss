@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+$body-bg: #1c1e1e;
+$body-color: #e0e4e2;
+$link-color: #f0776e;
+$navbar-bg: #1c1e1e;
+$navbar-fg: #a2aaa7;
+$navbar-hl: #e0e4e2;
+$font-family-sans-serif: "Karla", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Spectral", Georgia, serif;
+$web-font-path: false;
+
+/*-- scss:rules --*/
+:root {
+  --site-side: #232625;
+  --site-mute: #a2aaa7;
+  --site-line: #353938;
+  --site-photo: #303433;
+}
+
+// Both theme files stay loaded, so scope to the dark body class.
+body.quarto-dark {
+  .navbar .nav-link { color: $navbar-fg; }
+  .navbar .nav-link.active, .navbar .nav-link:hover { color: $navbar-hl; }
+}

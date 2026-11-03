@@ -1,56 +1,61 @@
 ---
-title: "Julie Xian"
-
-#image: images/prof_pic.jpg
-about:
-  template: solana
-  #image-shape: round
-  #image-width: 15em
-  links:
-    - text: github
-      icon: github
-      url: "https://github.com/juliexian"
-    - text: twitter
-      icon: twitter
-      url: "https://twitter.com/JulieXXian"
-    - text: "{{< ai google-scholar >}} google scholar"
-      url: "https://scholar.google.com/citations?user=px7_aJMAAAAJ&hl=en&oi=ao"
-      
-comments: false
+pagetitle: "Julie Xian"
 ---
 
-#### MD-PhD candidate
-<!--
-[Johns Hopkins Medical Scientist Training Program](https://mdphd.johnshopkins.edu)
--->
-Johns Hopkins Medical Scientist Training Program
+## About
 
-###### jxian2 [at] jh [dot] edu
+Hello! I am an MD-PhD candidate in the Johns Hopkins Medical Scientist Training Program. I am currently a second year PhD student in the [JEFworks lab](https://jef.works) under the primary mentorship of Dr Jean Fan. My research efforts are rooted in developing and applying computational methods to better understand the biological underpinnings of human disease.
 
-<br>
+One of my favorite quotes, from Carl Sagan, an astronomer, planetary scientist and science communicator:
 
-### Previous & Current Research Interests
+> [Science is a way of thinking much more than it is a body of knowledge.]{.hl-quote} Its goal is to find out how the world works, to seek what regularities there may be, to penetrate to the connections of things, from subnuclear particles, which may be the constituents of all matter, to living organisms, the human social community, and thence to the cosmos as a whole.
+>
+> [Carl Sagan, *Broca's Brain: Reflections on the Romance of Science*]{.cite}
 
-Genetics and genomics of human disease
+I hope my research journey documented here speaks to this philosophy.
 
-Analyzing spatially resolved transcriptomic sequencing data
+## Research journey, from Philadelphia to Baltimore
 
-Computational frameworks for large-scale phenotype data
+{{< include _includes/journey-map.md >}}
 
-### Education
+::: {#place-jhu .place-panel}
+### Johns Hopkins Medicine, Baltimore {.place-title}
 
-Johns Hopkins University \| Baltimore, MD
+[2023 to present]{.detail}
 
-MD-PhD candidate \| Aug 2023 - 
+- Medical Scientist Training Program, MD/PhD candidate
+- PhD candidate, Department of Biomedical Engineering
+- Advisor: Jean Fan, PhD, Center for Computational Biology ([JEFworks Lab](https://jef.works))
+- Co-advisor: Valsamo Anagnostou, MD, PhD, Sidney Kimmel Cancer Center ([Anagnostou Lab](https://anagnostoulab.org))
+- Research focus: *Delineating cellular niches in the tumor microenvironment through integration of spatial transcriptomics and computational pathology*
 
-University of Pennsylvania \| Philadelphia, PA
+#### Abstracts and talks
 
-B.A. in Neuroscience \| Aug 2018 - Dec 2021
-
-### Experience
-
-Children's Hospital of Philadelphia \| Philadelphia, PA
-
-Biomedical data scientist \| Sept 2021 - June 2023
-
+::: {.pubs}
+- **J. Xian**, et al. "Epigenetic biomarkers of brain injury in children on extracorporeal membrane oxygenation (ECMO)." [*Critical Care Medicine*, 2026. Abstract 1189. [Read the abstract](https://www.ovid.com/10.1097/01.ccm.0001186752.52641.db)]{.detail}
 :::
+
+More from my PhD work is on the way. Stay tuned!
+:::
+
+::: {#place-penn .place-panel}
+### Penn and CHOP, Philadelphia {.place-title}
+
+- University of Pennsylvania, B.A. in Neuroscience, Minor in Chemistry [2018 to 2021]{.detail}
+- Children's Hospital of Philadelphia, Biomedical data scientist [2021 to 2023]{.detail}
+- Advisor: Ingo Helbig, MD, Division of Neurology
+
+#### Selected publications
+
+::: {.pubs}
+- **J. Xian**, K.M. Thalwitzer, J. McKee, ..., I. Helbig. "Delineating clinical and developmental outcomes in *STXBP1*-related disorders." [*Brain*, 2023. [DOI](https://doi.org/10.1093/brain/awad287)]{.detail}
+- **J. Xian**, S. Parthasarathy, S.M. Ruggiero, ..., I. Helbig. "Assessing the landscape of *STXBP1*-related disorders in 534 individuals." [*Brain*, 2022. [DOI](https://doi.org/10.1093/brain/awab327)]{.detail}
+- **J. Xian**, I. Helbig. "Guardians of the epilepsy genome." [*European Journal of Paediatric Neurology*, 2023. [DOI](https://doi.org/10.1016/j.ejpn.2023.01.003)]{.detail}
+- S. Köhler, M. Gargano, N. Matentzoglu, ..., **J. Xian**, ..., P.N. Robinson. "The Human Phenotype Ontology in 2021." [*Nucleic Acids Research*, 2021. [DOI](https://doi.org/10.1093/nar/gkaa1043)]{.detail}
+- L. Montanucci, D. Lewis-Smith, R.L. Collins, L.M. Niestroj, S. Parthasarathy, **J. Xian**, ..., D. Lal. "Genome-wide identification and phenotypic characterization of seizure-associated copy number variations in 741,075 individuals." [*Nature Communications*, 2023. [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=seizure-associated+copy+number+variations+741%2C075+individuals)]{.detail}
+:::
+
+Read more in my former [blog posts](https://epilepsygenetics.blog/author/xianj/) on rare disease & epilepsy genetics and about ongoing efforts in the field at [ENDD](https://endd.med.upenn.edu).
+:::
+
+[All publications →](publications.qmd)

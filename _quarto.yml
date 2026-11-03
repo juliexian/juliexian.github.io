@@ -1,21 +1,41 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/*.qmd"
+  resources:
+    - assets/
 
 website:
   title: "Julie Xian"
-  favicon: "images/dna_icon.png"
+  favicon: assets/favicon.svg
+  search: false
+  navbar:
+    title: false
+    left:
+      - text: About
+        href: index.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Updates
+        href: updates.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Blog
+        href: blog.qmd
 
 format:
   html:
+    # The theme listed first is the one visitors see by default.
     theme:
-      dark: slate
-      light: yeti
+      dark: [default, theme-dark.scss]
+      light: [default, theme-light.scss]
     css: styles.css
-
-editor: visual
-
-execute:
-  freeze: auto
-
-
+    lang: en
+    html-math-method: plain
+    toc: false
+    anchor-sections: false
+    include-in-header: _includes/head.html
+    include-before-body: _includes/profile.html
+    include-after-body: _includes/footer.html

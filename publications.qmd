@@ -1,0 +1,13 @@
+---
+title: "Publications"
+---
+
+For a complete, up-to-date list, see [Google Scholar](https://scholar.google.com/citations?hl=en&user=px7_aJMAAAAJ&view_op=list_works&sortby=pubdate).
+
+## Papers
+
+{{< include _includes/papers.md >}}
+
+## Abstracts
+
+{{< include _includes/abstracts.md >}}

@@ -1,0 +1,79 @@
+---
+title: "Updates"
+---
+
+```{=html}
+<div class="place-tabs" role="group" aria-label="Choose updates">
+  <button type="button" class="place-tab" data-updates="updates-academic" aria-pressed="true">Academic</button>
+  <button type="button" class="place-tab" data-updates="updates-snapshots" aria-pressed="false">Snapshots</button>
+</div>
+```
+
+::: {#updates-academic .dated}
+- [Nov 2026]{.when} My [undergraduate mentee]{.hl}, Mayling Chen, received the Johns Hopkins [Provost's Undergraduate Research Award (PURA)]{.hl} fellowship!
+- [Sep 2026]{.when} Gave an [oral presentation]{.hl} on longitudinal spatial transcriptomic analyses of cellular niches in immunotherapy-treated gastroesophageal cancer at the [UAD Clinical and Translational Meeting]{.hl} in the Sidney Kimmel Cancer Center at Hopkins.
+- [Mar 2026]{.when} Presented our work on epigenetic biomarkers of brain injury in children on ECMO as an [oral presentation]{.hl} at the [Society of Critical Care Medicine Critical Care Congress]{.hl} in Chicago.
+- [Jan 2026]{.when} Joined the [JEFworks]{.hl} lab!
+- [Dec 2025]{.when} Gave an [oral presentation]{.hl} on our ECMO efforts at the [Johns Hopkins Anesthesiology and Critical Care Medicine 2025 Research Day Symposium]{.hl}.
+- [2025]{.when} Named a [finalist]{.hl} for the Paul & Daisy Soros Fellowships for New Americans.
+- [Apr 2024]{.when} Gave a [platform presentation]{.hl} at the [American Academy of Neurology Annual Meeting]{.hl} in Denver, and received the [AAN Medical Student Experience fellowship]{.hl}!
+- [Aug 2023]{.when} Started the [MD/PhD]{.hl} program in the Johns Hopkins Medical Scientist Training Program!
+:::
+
+::: {#updates-snapshots hidden=""}
+```{=html}
+<div class="snapshots">
+  <div class="snap-row">
+    <figure class="snap" tabindex="0" style="--ar: 1.340">
+      <img src="assets/pictures/sccm-2026.jpg" alt="Group photo of the Johns Hopkins Critical Care team at the Critical Care Congress in Chicago" width="800" height="597" loading="lazy">
+      <figcaption>Presented our work on epigenetic biomarkers of brain injury in children on ECMO at the Society of Critical Care Medicine Critical Care Congress in Chicago. Honored to be part of the Johns Hopkins Critical Care team. (Mar 2026)</figcaption>
+    </figure>
+  </div>
+  <div class="snap-row">
+    <figure class="snap" tabindex="0" style="--ar: 1.333">
+      <img src="assets/pictures/jefworks-2026.jpg" alt="Group photo of the JEFworks lab around a table with a cake" width="800" height="600" loading="lazy">
+      <figcaption>Joined the JEFworks lab and launched this website during my first lab sabbatical with the team! (Jan 2026–)</figcaption>
+    </figure>
+    <figure class="snap" tabindex="0" style="--ar: 0.666">
+      <img src="assets/pictures/scuba-2025.jpg" alt="Three scuba divers swimming above a coral reef" width="533" height="800" loading="lazy">
+      <figcaption>PADI Scuba Diver certified! (Dec 2025)</figcaption>
+    </figure>
+  </div>
+  <div class="snap-row">
+    <figure class="snap" tabindex="0" style="--ar: 0.750">
+      <img src="assets/pictures/nyc-marathon-2025.jpg" alt="Framed New York Times marathon results pages with a finisher's medal" width="600" height="800" loading="lazy">
+      <figcaption>Ran the 2025 TCS New York City Marathon! Maybe the only time my name will appear in the New York Times. (Nov 2025)</figcaption>
+    </figure>
+    <figure class="snap" tabindex="0" style="--ar: 0.750">
+      <img src="assets/pictures/white-coat-2024.jpg" alt="Julie in a white coat in front of the Johns Hopkins Hospital dome" width="600" height="800" loading="lazy">
+      <figcaption>Johns Hopkins University School of Medicine White Coat Ceremony. (April 2024)</figcaption>
+    </figure>
+  </div>
+  <div class="snap-row">
+    <figure class="snap" tabindex="0" style="--ar: 1.501">
+      <img src="assets/pictures/mstp-2023.jpg" alt="Group photo outdoors among autumn leaves" width="800" height="533" loading="lazy">
+      <figcaption>Started the MD/PhD program at the Johns Hopkins Medical Scientist Training Program! Looking forward to all that is to come. (Aug 2023–)</figcaption>
+    </figure>
+  </div>
+</div>
+```
+:::
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var tabs = document.querySelectorAll("[data-updates]");
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      tabs.forEach(function (o) {
+        var on = o === t;
+        o.setAttribute("aria-pressed", on ? "true" : "false");
+        o.classList.toggle("is-active", on);
+        document.getElementById(o.getAttribute("data-updates")).hidden = !on;
+      });
+    });
+  });
+  tabs[0].classList.add("is-active");
+});
+</script>
+```

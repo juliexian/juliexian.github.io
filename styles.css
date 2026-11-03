@@ -1,1 +1,91 @@
-/* css styles */
+/* Fonts are hosted with the site so visitors make no third-party requests. */
+@font-face { font-family: "Karla"; font-weight: 200 800; font-display: swap; src: url("assets/fonts/karla.woff2") format("woff2"); }
+@font-face { font-family: "Spectral"; font-weight: 400; font-display: swap; src: url("assets/fonts/spectral-400.woff2") format("woff2"); }
+@font-face { font-family: "Spectral"; font-weight: 500; font-display: swap; src: url("assets/fonts/spectral-500.woff2") format("woff2"); }
+
+a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
+h1, h2, h3 { font-weight: 500; text-wrap: balance; }
+
+/* Profile sidebar */
+.profile { background: var(--site-side); border-bottom: 1px solid var(--site-line); padding: 32px 28px; display: grid; gap: 16px; align-content: start; }
+.profile p { margin: 0; }
+.profile-photo { width: 136px; height: 136px; border-radius: 50%; object-fit: cover; background: var(--site-photo); color: var(--site-mute); display: grid; place-items: center; font-family: "Spectral", Georgia, serif; font-size: 2rem; }
+.profile-name { font-family: "Spectral", Georgia, serif; font-size: 1.75rem; font-weight: 500; line-height: 1.1; color: var(--bs-body-color); text-decoration: none; }
+.profile-role, .profile-email { color: var(--site-mute); font-size: 0.9375rem; }
+.profile-email { overflow-wrap: anywhere; }
+.profile-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.9375rem; }
+
+/* Page content */
+#quarto-content { max-width: 900px; }
+main.content h2 { font-size: 1.375rem; margin-top: 2rem; border: 0; padding: 0; }
+main.content p, main.content li { line-height: 1.65; text-wrap: pretty; }
+main.content ul:not(.profile-links) { list-style: none; padding: 0; }
+main.content ul:not(.profile-links) > li { padding-block: 9px; border-top: 1px solid var(--site-line); }
+main.content li p { margin: 0; }
+.detail { display: block; font-size: 0.875rem; color: var(--site-mute); }
+main.content h3 { font-size: 1.125rem; margin-top: 0.5rem; }
+main.content h4 { font-family: "Karla", "Helvetica Neue", Arial, sans-serif; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--site-mute); margin-top: 1.5rem; }
+
+/* Sagan quote */
+main.content blockquote { border-left: 2px solid var(--bs-link-color); margin: 1rem 0; padding: 0.25rem 0 0.25rem 1.25rem; font-family: "Spectral", Georgia, serif; font-size: 1rem; font-style: normal; color: var(--bs-body-color); }
+main.content blockquote p:last-child { margin-bottom: 0; }
+.cite { font-family: "Karla", "Helvetica Neue", Arial, sans-serif; font-size: 0.875rem; color: var(--site-mute); }
+
+/* Philadelphia to Baltimore map */
+.jm-field { position: relative; padding-block: 32px; margin: 0.5rem 0 0.75rem; }
+.jm-cells { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.journey-map { position: relative; z-index: 1; margin: 0; }
+.journey-map svg { display: block; width: 100%; max-width: 340px; height: auto; margin-inline: auto; }
+.jm-outline { fill: none; stroke: var(--site-mute); stroke-width: 0.6; stroke-opacity: 0.45; }
+.jm-star { fill: var(--site-mute); }
+.jm-home { fill: var(--bs-link-color); }
+.jm-leader { stroke: var(--site-mute); stroke-width: 0.6; stroke-dasharray: 2 3; }
+.jm-lens { fill: var(--site-side); stroke: var(--site-line); stroke-width: 1; }
+.jm-route { fill: none; stroke: var(--bs-link-color); stroke-width: 1; stroke-dasharray: 3 3; }
+.jm-city { cursor: pointer; }
+.jm-city text { fill: var(--site-mute); font-size: 13px; font-family: "Karla", "Helvetica Neue", Arial, sans-serif; }
+.jm-dot { fill: var(--site-mute); }
+.jm-ring { fill: transparent; stroke: none; }
+.jm-city.is-active .jm-dot { fill: var(--bs-link-color); }
+.jm-city.is-active .jm-ring { stroke: var(--bs-link-color); stroke-width: 1; }
+.jm-city.is-active text { fill: var(--bs-body-color); font-weight: 700; }
+.jm-city:focus-visible { outline: none; }
+.jm-city:focus-visible .jm-ring { stroke: var(--bs-body-color); stroke-width: 1.5; }
+.place-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.25rem; }
+.place-tab { font: inherit; font-size: 0.9375rem; color: var(--bs-body-color); background: transparent; border: 1px solid var(--site-line); border-radius: 999px; padding: 4px 14px; cursor: pointer; }
+.place-tab.is-active { border-color: var(--bs-link-color); color: var(--bs-link-color); }
+.place-tab:focus-visible { outline: 2px solid var(--bs-body-color); outline-offset: 2px; }
+
+/* Dated lists (Updates, awards) */
+.dated ul > li { position: relative; padding-left: 92px !important; }
+.when { position: absolute; left: 0; top: 9px; font-size: 0.875rem; color: var(--site-mute); font-variant-numeric: tabular-nums; }
+.hl { color: var(--bs-link-color); font-weight: 700; }
+
+/* Snapshots: photos sit in rows of equal height and keep their own shapes.
+   Each photo's --ar (width / height) sets its share of the row; phones stack them.
+   Hovering or tapping a photo fades it and shows its caption. */
+.snap-row { display: flex; gap: 12px; margin-bottom: 12px; }
+.snap { position: relative; flex: var(--ar) 1 0; min-width: 0; margin: 0; overflow: hidden; border-radius: 8px; background: var(--site-side); }
+.snap img { display: block; margin: 0; width: 100%; height: auto; transition: opacity 0.35s ease; }
+.snap figcaption { position: absolute; inset: 0; display: flex; align-items: center; padding: 0.875rem 1rem; overflow-y: auto; font-size: 0.875rem; line-height: 1.5; color: var(--bs-body-color); opacity: 0; transition: opacity 0.35s ease; text-wrap: pretty; }
+.snap:hover img, .snap:focus img { opacity: 0.08; }
+.snap:hover figcaption, .snap:focus figcaption { opacity: 1; }
+.snap:focus-visible { outline: 2px solid var(--bs-link-color); outline-offset: 2px; }
+@media (max-width: 575.98px) { .snap-row { flex-direction: column; } .snap { flex: none; align-self: center; width: min(100%, calc(var(--ar) * 560px)); } }
+@media (prefers-reduced-motion: reduce) { .snap img, .snap figcaption { transition: none; } }
+
+/* CV */
+/* The CV page runs wider than the other pages so the PDF reads at a larger size. */
+.cv-page #quarto-content { max-width: 1100px; }
+.cv-frame { display: block; width: 100%; height: 1200px; max-height: 90vh; border: 1px solid var(--site-line); border-radius: 8px; background: #fff; }
+
+/* Footer: the AI note */
+.site-footer { position: relative; overflow: hidden; box-sizing: border-box; width: auto; grid-column: body-content-start / page-end-inset; margin: 3rem 0 0; padding: 1.25rem 1.5rem; border-top: 1px solid var(--site-line); }
+.ai-note { margin: 0; font-size: 0.8125rem; color: var(--site-mute); max-width: 90ch; }
+
+@media (min-width: 768px) {
+  .profile { position: fixed; inset: 0 auto 0 0; width: 260px; overflow-y: auto; border-bottom: 0; border-right: 1px solid var(--site-line); z-index: 1040; }
+  .profile-links { display: grid; }
+  body { padding-left: 260px; }
+  #quarto-header { left: 260px; }
+}

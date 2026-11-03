@@ -1,0 +1,10 @@
+---
+title: "Curriculum Vitae"
+body-classes: cv-page
+---
+
+Full academic CV. View it below or [download the PDF](assets/cv.pdf).
+
+```{=html}
+<iframe class="cv-frame" src="assets/cv.pdf#navpanes=0&pagemode=none&view=FitH" title="Julie Xian CV"></iframe>
+```

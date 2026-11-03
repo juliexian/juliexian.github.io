@@ -1,0 +1,11 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: false
+  fields: [date, title, description]
+---
+
+First post coming soon.

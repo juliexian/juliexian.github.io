@@ -1,1 +1,19 @@
+# Build output
 /.quarto/
+/_site/
+
+# Original files before their metadata is stripped
+/_incoming/
+
+# Never publish local or credential files
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+rsconnect/
+.env
+.env.*
+*.pem
+*.key
+
+**/*.quarto_ipynb

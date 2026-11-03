@@ -1,0 +1,7 @@
+---
+title: "Post title"
+date: 2026-01-31
+description: "One sentence shown in the list of posts."
+---
+
+Copy this file to a new name without the leading underscore, such as `posts/first-post.qmd`, and write your post here in Markdown.

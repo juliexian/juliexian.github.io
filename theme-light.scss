@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+$body-bg: #f8f9f8;
+$body-color: #1e2322;
+$link-color: #a82a2a;
+$navbar-bg: #f8f9f8;
+$navbar-fg: #5f6866;
+$navbar-hl: #1e2322;
+$font-family-sans-serif: "Karla", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Spectral", Georgia, serif;
+$web-font-path: false;
+
+/*-- scss:rules --*/
+:root {
+  --site-side: #eef0ef;
+  --site-mute: #5f6866;
+  --site-line: #dce0de;
+  --site-photo: #dfe3e1;
+}
+
+// Highlighter marks, light mode only. Both theme files stay loaded, so scope to the light body class.
+// Dark mode keeps bold red text.
+body.quarto-light {
+  .navbar .nav-link { color: $navbar-fg; }
+  .navbar .nav-link.active, .navbar .nav-link:hover { color: $navbar-hl; }
+
+  // A marker stroke across the lower half of the letters.
+  .hl, .hl-quote, .pubs strong {
+    background: linear-gradient(to bottom, transparent 52%, rgba(246, 176, 98, 0.42) 52%, rgba(246, 176, 98, 0.42) 90%, transparent 90%);
+    color: inherit;
+    font-weight: inherit;
+    padding: 0 0.12em;
+    margin: 0 -0.06em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .pubs strong { font-weight: 700; }
+}
