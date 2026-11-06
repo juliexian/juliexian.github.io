@@ -12,17 +12,26 @@ title: "Updates"
 ::: {#updates-academic .dated}
 - [Nov 2026]{.when} My [undergraduate mentee]{.hl}, Mayling Chen, received the Johns Hopkins [Provost's Undergraduate Research Award (PURA)]{.hl} fellowship!
 - [Sep 2026]{.when} Gave an [oral presentation]{.hl} on longitudinal spatial transcriptomic analyses of cellular niches in immunotherapy-treated gastroesophageal cancer at the [UAD Clinical and Translational Meeting]{.hl} in the Sidney Kimmel Cancer Center at Hopkins.
+- [Aug 2026]{.when} Passed my [Doctoral Board Oral]{.hl} and officially a [PhD candidate]{.hl}.
 - [Mar 2026]{.when} Presented our work on epigenetic biomarkers of brain injury in children on ECMO as an [oral presentation]{.hl} at the [Society of Critical Care Medicine Critical Care Congress]{.hl} in Chicago.
 - [Jan 2026]{.when} Joined the [JEFworks]{.hl} lab!
 - [Dec 2025]{.when} Gave an [oral presentation]{.hl} on our ECMO efforts at the [Johns Hopkins Anesthesiology and Critical Care Medicine 2025 Research Day Symposium]{.hl}.
 - [2025]{.when} Named a [finalist]{.hl} for the Paul & Daisy Soros Fellowships for New Americans.
+- [Apr 2025]{.when} Passed [USMLE Step 1]{.hl}.
 - [Apr 2024]{.when} Gave a [platform presentation]{.hl} at the [American Academy of Neurology Annual Meeting]{.hl} in Denver, and received the [AAN Medical Student Experience fellowship]{.hl}!
 - [Aug 2023]{.when} Started the [MD/PhD]{.hl} program in the Johns Hopkins Medical Scientist Training Program!
 :::
 
 ::: {#updates-snapshots hidden=""}
 ```{=html}
+<p class="snap-subtitle">Some curiosity drives exploration, inside and outside the lab.</p>
 <div class="snapshots">
+  <div class="snap-row">
+    <figure class="snap" tabindex="0" style="--ar: 1.333">
+      <img src="assets/pictures/covered-bridge-2026.jpg" alt="Julie with a road bike in front of a wooden covered bridge" width="800" height="600" loading="lazy">
+      <figcaption>First 100km (66 mile) bike ride at the Covered Bridge Classic, PA. And passed my PhD Doctoral Board Oral the following day. (Aug 2026)</figcaption>
+    </figure>
+  </div>
   <div class="snap-row">
     <figure class="snap" tabindex="0" style="--ar: 1.340">
       <img src="assets/pictures/sccm-2026.jpg" alt="Group photo of the Johns Hopkins Critical Care team at the Critical Care Congress in Chicago" width="800" height="597" loading="lazy">

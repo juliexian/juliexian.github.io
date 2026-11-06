@@ -29,8 +29,8 @@ format:
   html:
     # The theme listed first is the one visitors see by default.
     theme:
-      dark: [default, theme-dark.scss]
       light: [default, theme-light.scss]
+      dark: [default, theme-dark.scss]
     css: styles.css
     lang: en
     html-math-method: plain

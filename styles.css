@@ -64,6 +64,7 @@ main.content blockquote p:last-child { margin-bottom: 0; }
 /* Snapshots: photos sit in rows of equal height and keep their own shapes.
    Each photo's --ar (width / height) sets its share of the row; phones stack them.
    Hovering or tapping a photo fades it and shows its caption. */
+.snap-subtitle { margin: 0 0 1rem; font-family: "Spectral", Georgia, serif; font-style: italic; font-size: 1.0625rem; color: var(--site-mute); }
 .snap-row { display: flex; gap: 12px; margin-bottom: 12px; }
 .snap { position: relative; flex: var(--ar) 1 0; min-width: 0; margin: 0; overflow: hidden; border-radius: 8px; background: var(--site-side); }
 .snap img { display: block; margin: 0; width: 100%; height: auto; transition: opacity 0.35s ease; }
