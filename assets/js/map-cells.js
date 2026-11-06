@@ -11,20 +11,12 @@
   if (!canvas || !svg || !canvas.getContext) return;
   var ctx = canvas.getContext("2d");
 
-  // Johns Hopkins: immune checkpoint genes alternating with commonly studied genes.
-  var CHECKPOINTS = ["PDCD1", "CD274", "CTLA4", "LAG3", "HAVCR2", "TIGIT", "PDCD1LG2", "IDO1", "VSIR", "CD276", "BTLA", "SIGLEC15"];
-  var COMMON = ["TP53", "TNF", "EGFR", "IL6", "VEGFA", "APOE", "TGFB1", "ESR1", "MTHFR", "AKT1", "PTGS2", "CDKN2A",
-                "BRCA1", "HIF1A", "ACE", "MYC", "KRAS", "ERBB2", "STAT3", "BCL2"];
-  var JHU = [];
-  for (var i = 0; i < Math.max(CHECKPOINTS.length, COMMON.length); i++) {
-    if (COMMON[i]) JHU.push(COMMON[i]);
-    if (CHECKPOINTS[i]) JHU.push(CHECKPOINTS[i]);
-  }
-  // Penn and CHOP: pediatric neurodevelopmental and epilepsy genes.
-  var PENN = ["STXBP1", "SYNGAP1", "SCN1A", "SCN2A", "SCN8A", "KCNQ2", "CDKL5", "MECP2", "FOXG1", "GRIN2A",
-              "GRIN2B", "PCDH19", "SLC2A1", "DEPDC5", "TSC1", "TSC2", "KCNT1", "GABRA1", "GABRB3", "CHD2",
-              "ARX", "DNM1", "HNRNPU", "SLC6A1", "KCNB1", "CACNA1A", "GNAO1", "ARID1B", "DYRK1A", "SHANK3"];
-  var GENES = { "place-jhu": JHU, "place-penn": PENN };
+  // Gene lists come from the hidden, searchable list on the page, so they live in one place.
+  var GENES = {};
+  Array.prototype.forEach.call(document.querySelectorAll("#jm-genes [data-genes]"), function (el) {
+    GENES[el.getAttribute("data-genes")] = el.textContent.split(",").map(function (g) { return g.trim(); }).filter(Boolean);
+  });
+  var JHU = GENES["place-jhu"] || ["TP53"];
 
   var FOCUS_RADIUS = 100, FONT_PX = 6.5, LINE_H = 8.5, SEP = " · ";
   var LABEL_FONT = "italic " + FONT_PX + "px Karla, 'Helvetica Neue', Arial, sans-serif";

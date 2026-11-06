@@ -43,7 +43,7 @@ main.content blockquote p:last-child { margin-bottom: 0; }
 .jm-lens { fill: var(--site-side); stroke: var(--site-line); stroke-width: 1; }
 .jm-route { fill: none; stroke: var(--bs-link-color); stroke-width: 1; stroke-dasharray: 3 3; }
 .jm-city { cursor: pointer; }
-.jm-city text { fill: var(--site-mute); font-size: 13px; font-family: "Karla", "Helvetica Neue", Arial, sans-serif; }
+.jm-city text { fill: var(--site-mute); font-size: 19px; font-family: "Karla", "Helvetica Neue", Arial, sans-serif; }
 .jm-dot { fill: var(--site-mute); }
 .jm-ring { fill: transparent; stroke: none; }
 .jm-city.is-active .jm-dot { fill: var(--bs-link-color); }
@@ -52,6 +52,8 @@ main.content blockquote p:last-child { margin-bottom: 0; }
 .jm-city:focus-visible { outline: none; }
 .jm-city:focus-visible .jm-ring { stroke: var(--bs-body-color); stroke-width: 1.5; }
 .place-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.25rem; }
+.place-opt { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.place-years { font-size: 0.8125rem; color: var(--site-mute); font-variant-numeric: tabular-nums; }
 .place-tab { font: inherit; font-size: 0.9375rem; color: var(--bs-body-color); background: transparent; border: 1px solid var(--site-line); border-radius: 999px; padding: 4px 14px; cursor: pointer; }
 .place-tab.is-active { border-color: var(--bs-link-color); color: var(--bs-link-color); }
 .place-tab:focus-visible { outline: 2px solid var(--bs-body-color); outline-offset: 2px; }
