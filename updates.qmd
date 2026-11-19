@@ -10,12 +10,13 @@ title: "Updates"
 ```
 
 ::: {#updates-academic .dated}
+- [Nov 2026]{.when} Presented our work on resolving spatial niches and cellular signaling in pilocytic astrocytoma through histopathology and spatial transcriptomics at [Convergence Conversations]{.hl} at the Sidney Kimmel Cancer Center in Baltimore.
 - [Nov 2026]{.when} My [undergraduate mentee]{.hl}, Mayling Chen, received the Johns Hopkins [Provost's Undergraduate Research Award (PURA)]{.hl} fellowship!
-- [Sep 2026]{.when} Gave an [oral presentation]{.hl} on longitudinal spatial transcriptomic analyses of cellular niches in immunotherapy-treated gastroesophageal cancer at the [UAD Clinical and Translational Meeting]{.hl} in the Sidney Kimmel Cancer Center at Hopkins.
+- [Sep 2026]{.when} Gave a presentation on longitudinal spatial transcriptomic analyses of cellular niches in immunotherapy-treated gastroesophageal cancer at the [UAD Clinical and Translational Meeting]{.hl} in the Sidney Kimmel Cancer Center at Hopkins.
 - [Aug 2026]{.when} Passed my [Doctoral Board Oral]{.hl} and officially a [PhD candidate]{.hl}.
-- [Mar 2026]{.when} Presented our work on epigenetic biomarkers of brain injury in children on ECMO as an [oral presentation]{.hl} at the [Society of Critical Care Medicine Critical Care Congress]{.hl} in Chicago.
+- [Mar 2026]{.when} Presented our work on epigenetic biomarkers of brain injury in children on ECMO at the [Society of Critical Care Medicine Critical Care Congress]{.hl} in Chicago.
 - [Jan 2026]{.when} Joined the [JEFworks]{.hl} lab!
-- [Dec 2025]{.when} Gave an [oral presentation]{.hl} on our ECMO efforts at the [Johns Hopkins Anesthesiology and Critical Care Medicine 2025 Research Day Symposium]{.hl}.
+- [Dec 2025]{.when} Gave a presentation on our ECMO efforts at the [Johns Hopkins Anesthesiology and Critical Care Medicine 2025 Research Day Symposium]{.hl}.
 - [2025]{.when} Named a [finalist]{.hl} for the Paul & Daisy Soros Fellowships for New Americans.
 - [Apr 2025]{.when} Passed [USMLE Step 1]{.hl}.
 - [Apr 2024]{.when} Gave a [platform presentation]{.hl} at the [American Academy of Neurology Annual Meeting]{.hl} in Denver, and received the [AAN Medical Student Experience fellowship]{.hl}!
